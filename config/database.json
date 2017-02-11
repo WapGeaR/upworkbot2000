@@ -1,3 +1,3 @@
 {
-  "url": "mongodb://localhost/chatBot"
+  "url": "mongodb://localhost:27017/upworkdev_bot"
 }
