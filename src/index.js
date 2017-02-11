@@ -1,6 +1,8 @@
 import TelegramBot from 'node-telegram-bot-api'
+import BotConfig from '../config/bot.json'
 
-let token = '365374137:AAGlhMl6IQ92Foqka21m1mbvisp0hZYzWa4'
+
+let token = BotConfig.token
 
 class Bot {
   constructor() {
