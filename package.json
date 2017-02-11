@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node starter.js"
+    "start": "nodemon starter.js"
   },
   "author": "",
   "license": "ISC",
@@ -16,7 +16,8 @@
     "eslint": "^3.15.0",
     "moment": "^2.17.1",
     "mongoose": "^4.8.2",
-    "node-telegram-bot-api": "^0.27.0"
+    "node-telegram-bot-api": "^0.27.0",
+    "nodemon": "^1.11.0"
   },
   "devDependencies": {
     "babel-eslint": "^7.1.1"
