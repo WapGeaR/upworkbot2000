@@ -1,11 +1,15 @@
 import _ from 'lodash'
 import TelegramBot from 'node-telegram-bot-api'
-import BotConfig from '../config/bot.json'
 import User from './db/models/User'
 export default class Bot {
 
   constructor() {
-    this.bot = new TelegramBot(BotConfig.token, { polling: true })
+    const token = process.env.BOT_TOKEN || null;
+    if (!token) {
+      throw new Error("No token provided (env: BOT_TOKEN)")
+    }
+
+    this.bot = new TelegramBot(token, { polling: true })
     this.sendHelpInformation = this.sendHelpInformation.bind(this)
     this.checkExist = this.checkExist.bind(this)
     this.arestantWelcome = this.arestantWelcome.bind(this)

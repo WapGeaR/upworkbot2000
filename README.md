@@ -2,5 +2,6 @@
 
 ```
 yarn install
-yarn start
+BOT_TOKEN="YOUR_TELEGRAM_BOT_TOKEN" yarn start
 ```
+
