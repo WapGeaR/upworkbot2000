@@ -15,6 +15,9 @@ const User = Schema({
     },
     last_name: {
         type: String
+    },
+    last_message_at: {
+        type: Date
     }
 });
 
